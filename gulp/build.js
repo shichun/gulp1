@@ -6,7 +6,7 @@ gulp.task('copy-html-files', function() {
     return stream;
 });
 gulp.task('copy-js-files', function() {
-    var stream = gulp.src(['bower_components/jquery/dist/jquery.js', './src/library/**/*']) // stream source
+    var stream = gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/angular/angular.js', './src/library/**/*']) // stream source
         .pipe(gulp.dest('./dist/view/js')); // copy to dist/views
     return stream;
 });
