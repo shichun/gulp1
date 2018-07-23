@@ -1,0 +1,32 @@
+<!-- build:js scripts/vendor.js// concatenate to vendor.js --> 
+<!-- bower:js  // tells wiredep to inject all bower dependencies-->
+
+<!-- endbower -->
+<!-- endbuild -->
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="js/jquery.js"></script>
+
+<link rel="stylesheet" href="js/themes/default/style.min.css" />
+<script src="js/jstree.js"></script>
+<script>
+    $(function() {
+      $('#container').jstree();
+    });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <ul>
+          <li>Root node
+            <ul>
+              <li>Child node 1</li>
+              <li>Child node 2</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
